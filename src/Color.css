@@ -1,0 +1,59 @@
+.red{
+    color: red;
+}
+
+.blue{
+    color: blue;
+}
+
+.green{
+    color: green;
+}
+
+.black{
+    color:black;
+}
+
+.redButton{
+    background-color: red;
+
+}
+
+.blueButton{
+    background-color: blue;
+}
+
+.greenButton{
+    background-color: green;
+}
+
+.blackButton{
+    background-color: black;
+}
+
+.blue:hover{
+
+}
+
+button {
+    width: 2rem;
+    height: 2rem;
+}
+
+button .hoverText {
+    visibility: hidden;
+    width: 120px;
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+
+    /* Position the tooltip */
+    position: absolute;
+    z-index: 1;
+}
+
+button:hover .hoverText {
+    visibility: visible;
+}
