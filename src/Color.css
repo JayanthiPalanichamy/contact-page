@@ -57,3 +57,29 @@ button .hoverText {
 button:hover .hoverText {
     visibility: visible;
 }
+
+#name{
+    width: 300px;
+    height: 20px;
+    border:1px;
+    margin: 5px 1px 5px 600px;
+}
+
+.colorButton{
+    display: grid;
+    margin: 20px 1px 5px 600px;
+    grid-template-columns: 80px 80px 80px 80px;
+}
+
+.contactDetail{
+    margin: 20px 1px 5px 600px;
+
+}
+
+.userInfo{
+    margin: 20px 1px 5px 0px;
+}
+
+.error{
+    color:red;
+}

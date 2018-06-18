@@ -19,9 +19,9 @@ class Color extends Component {
     render() {
         return (
             <section id="userInput">
-                <input id="name" onChange={this.validate}/>
+                <input id="name" onChange={this.validate} />
                 <label className="error">{this.state.error}</label>
-                <section>
+                <section className="colorButton">
                     <button value="red" onClick={this.setColor} className="redButton"><span
                         className="hoverText">Red</span></button>
                     <button value="blue" onClick={this.setColor} className="blueButton"><span
@@ -31,7 +31,7 @@ class Color extends Component {
                     <button value="black" onClick={this.setColor} className="blackButton"><span
                         className="hoverText">Black</span></button>
                 </section>
-                <section>
+                <section className="contactDetail">
                     <input type="radio" name="contact" value="Physical" defaultChecked={<section>
                         Address Line 1<input className="line1"/>
                         <br/>
@@ -40,8 +40,10 @@ class Color extends Component {
                     <input type="radio" name="contact" value="Digital" onChange={this.contactChange}/> Digital
 
                     <br/>
+                    <section className="userInfo">
                     <label className={this.state.color}>{this.state.name}</label>
                     {this.state.reachMe}
+                    </section>
                 </section>
             </section>
 
@@ -97,20 +99,20 @@ class Color extends Component {
 function AddressSelector(props) {
     if (props.value === "Physical") {
         return (
-            <section>
-                Address Line 1<input className="line1"/>
+            <section id="physical">
+                Address Line 1<input id="address1" className="line1"/>
                 <br/>
-                Address Line 2<input className="line2"/>
+                Address Line 2<input id="address2" className="line2"/>
             </section>
 
         )
     }
     else {
         return (
-            <section>
-                E-mail<input className="email"/>
+            <section id="digital">
+                E-mail<input id="email" className="email" />
                 <br/>
-                Phone Number<input className="phone"/>
+                Phone Number<input id="phone" className="phone"/>
             </section>
 
         )
